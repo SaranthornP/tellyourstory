@@ -9,10 +9,17 @@ import Home from './components/home'
 import Consult from './components/consult';
 import TalkingArea from './components/talkingArea';
 import { Route, Routes } from 'react-router-dom';
+import { Helmet } from "react-helmet";
+
+const TITLE = 'My Page Title';
 
 function App() {
+
   return (
     <div className="App">
+
+      <title>{TITLE}</title>
+      <SignupForm />
       <Navigation />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -21,6 +28,17 @@ function App() {
       </Routes>
     </div>
   );
+}
+
+
+export const SignupForm = () => {
+  return (
+    < Helmet>
+      <meta charSet="utf-8" />
+      <title>TellYourStory</title>
+      <link rel="canonical" href="http://www.learnbestcoding.com" />
+    </Helmet>
+  )
 }
 
 export default App;
