@@ -6,24 +6,19 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import Navigation from './Navbar';
 import Home from './components/home'
-import About from './components/About';
+import Consult from './components/consult';
+import TalkingArea from './components/talkingArea';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
-  let Component
-  switch (window.location.pathname) {
-    case "/":
-      Component = <Home />
-      break;
-    case "/link":
-      Component = <About />
-      break;
-    default:
-      break;
-  }
   return (
     <div className="App">
       <Navigation />
-      {Component}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/Consult' element={<Consult />} />
+        <Route path='/Talking_Area' element={<TalkingArea />} />
+      </Routes>
     </div>
   );
 }

@@ -1,12 +1,28 @@
-.App {
-  text-align: center;
+* {
+  background-color: #fef5f5;
 }
 
-#ntext {
+.navbar li p {
+  color: black;
+}
+
+.navbar li.active p {
   color: #f55253;
 }
 
+.navbar li:hover p {
+  color: darkred;
+}
 
-.navtextColor:hover {
-  background-color: lightgrey;
+.ImgBrand {
+  width: 20%;
+  height: auto;
+}
+
+.ObjTag {
+  width: fit-content;
+}
+
+.tes {
+  background-color: white;
 }
