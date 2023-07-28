@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+import Navigation from './Navbar';
+import Home from './components/home'
+import About from './components/About';
 
 function App() {
+  let Component
+  switch (window.location.pathname) {
+    case "/":
+      Component = <Home />
+      break;
+    case "/link":
+      Component = <About />
+      break;
+    default:
+      break;
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      {Component}
     </div>
   );
 }
