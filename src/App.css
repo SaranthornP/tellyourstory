@@ -1,4 +1,4 @@
-* {
+body {
   background-color: #fef5f5;
 }
 
@@ -26,3 +26,29 @@
 .tes {
   background-color: white;
 }
+
+/*Home Page*/
+.homePage {
+  background-color: white;
+}
+
+.homePage .pHome {
+  background-color: #fdecec;
+  color: #f55556;
+  width: fit-content;
+  padding: 3px;
+}
+
+.homePage .hourColor {
+  color: #f55556;
+}
+
+.homePage h1 {
+  font-size: 65px;
+}
+
+/*---------------------------------------*/
+
+/*Consult Page*/
+
+/*---------------------------------------*/
