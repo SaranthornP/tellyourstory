@@ -50,5 +50,33 @@ body {
 /*---------------------------------------*/
 
 /*Consult Page*/
+.consultPage h1 {
+  font-size: 60px;
+}
+
+.consultPage .Heart {
+  color: #FD5DA8;
+}
+
+.consultPage .searchArea form {
+  width: 40%;
+}
+
+.consultPage .searchArea .form-control {
+  border: 0;
+  outline: none;
+}
+
+.consultPage .form-control:focus {
+  border: 0;
+  outline: none;
+  box-shadow: 0 0;
+}
+
+.consultPage .searchArea button {
+  background-color: #FD5DA8;
+  color: white;
+}
+
 
 /*---------------------------------------*/
