@@ -27,8 +27,8 @@ function Navigation() {
                             <CustomLink to="/Contact">ติดต่อ</CustomLink>
                         </ul>
                         <ul className='d-flex align-self-end navbar-nav text-end'>
-                            <CustomLink to="/Login">ล็อกอิน</CustomLink>
-                            <CustomLink to="/Register">สร้างบัญชี</CustomLink>
+                            <CustomLink classN="fw-bold" to="/Login">ล็อกอิน</CustomLink>
+                            <CustomLink classN="fw-bold rigister rounded-pill px-3 text-white" to="/Register">สร้างบัญชี</CustomLink>
 
                         </ul>
                     </div>
@@ -40,13 +40,13 @@ function Navigation() {
     );
 }
 
-function CustomLink({ to, children, ...props }) {
+function CustomLink({ classN, to, children, ...props }) {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({ path: resolvedPath.pathname, end: true })
     return (
         <li className={isActive ? "active" : ""}>
-            < Link className="nav-link pe-0 pe-lg-2" to={to} {...props}>
-                <p>{children}</p>
+            < Link className={" nav-link pe-0 pe-lg-2"} to={to} {...props}>
+                <p className={classN}>{children}</p>
 
             </Link >
 

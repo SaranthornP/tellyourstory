@@ -29,7 +29,7 @@ function Consult() {
                 <div className="col-12 my-5">
                     <h5>Trending search</h5>
                 </div>
-                <div className="col-12 d-flex justify-content-center">
+                <div id="TrendingTag" className="col-12 d-flex justify-content-center">
                     <ObjTag val="family" />
                     <ObjTag val="family" />
                 </div>

@@ -2,12 +2,14 @@ body {
   background-color: #fef5f5;
 }
 
+/*Navigation bar*/
 .navbar li p {
   color: black;
 }
 
 .navbar li.active p {
   color: #f55253;
+  font-weight: bold;
 }
 
 .navbar li:hover p {
@@ -19,12 +21,26 @@ body {
   height: auto;
 }
 
-.ObjTag {
-  width: fit-content;
+.nav .rigister {
+  background-color: #f55253;
 }
 
-.tes {
-  background-color: white;
+.nav .rigister:hover {
+  background-color: darkred;
+}
+
+.nav .rigister:hover p {
+  color: white;
+}
+
+.nav .rigister p {
+  color: white;
+}
+
+/*---------------------------------------*/
+
+.ObjTag {
+  width: fit-content;
 }
 
 /*Home Page*/
